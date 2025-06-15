@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double pri_amt = sc.nextDouble();
+        double int_rate = sc.nextDouble();
+        double time_prd = sc.nextDouble();
+        double amount = pri_amt * Math.pow((1 + int_rate / 100), time_prd);
+        double com_int = amount - pri_amt;
+        System.out.printf("Compound Interest = %.2f\n", com_int);
+    }
+}

@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int days=sc.nextInt();
+        int weeks=days/7;
+        int years=weeks/52;
+        System.out.println("Days :" +days);
+        System.out.println("Weeks :" +weeks);
+        System.out.println("Years :"+years);
+    }
+}

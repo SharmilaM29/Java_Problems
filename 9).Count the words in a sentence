@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String k=sc.nextLine().trim();
+        int count=0;
+        boolean inword=false;
+        for(char ch : k.toCharArray()){
+            if(ch !=' ' && !inword){
+                inword=true;
+                count++;
+            }
+            else if(ch== ' '){
+                inword=false;
+            }
+        }
+        System.out.println(count);
+    }
+}

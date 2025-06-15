@@ -1,0 +1,10 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int len=sc.nextInt();
+        int wid=sc.nextInt();
+        int Area=len*wid;
+        System.out.println(Area);
+    }
+}
